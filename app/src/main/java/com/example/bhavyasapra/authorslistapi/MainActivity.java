@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         lv=(ListView)findViewById(R.id.authorsListview);
 
 
-        Call<authorlistdata> call = ApiClient.getApiInterface().getauthorlist();
+        Call<authorlistdata> call = ApiClient.getApiInterface().getauthorlist(Apikeyclass.API_KEY);
         progressDialog=new ProgressDialog(MainActivity.this);
         progressDialog.setTitle("Fetching authors list");
         progressDialog.setMessage("Wait");
